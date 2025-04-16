@@ -2,27 +2,54 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | QR code component</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <title>QR Code Card</title>
   <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
+    body {
+      margin: 0;
+      background-color: #d5e1ef;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      font-family: Arial, sans-serif;
+    }
+  
+    .card {
+      background: white;
+      border-radius: 20px;
+      width: 300px;
+      padding: 16px;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+      text-align: center;
+    }
+
+    .qr-container {
+      background-image: url("zkde5jqnoqf9xnvftyzl.jpg");
+      background-size: cover;
+      background-position: center;
+      border-radius: 15px;
+      padding: 16px;
+    }
+
+    .qr-container img {
+      width: 100%;
+      border-radius: 10px;
+    }
+
+    p {
+      color: #7b879d;
+      font-size: 14px;
+      margin: 0 16px 16px;
+    }
   </style>
 </head>
 <body>
-
-  Improve your front-end skills by building projects
-
-  Scan the QR code to visit Frontend Mentor and take your coding skills to the next level
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+  <div class="card">
+    <div class="qr-container">
+      <img src="https://api.qrserver.com/v1/create-qr-code/?data=https://www.frontendmentor.io&size=150x150" alt="QR Code">
+    </div>
+    <h2>Improve your front-end skills by building projects</h2>
+    <p>Scan the QR code to visit Frontend Mentor and take your coding skills to the next level</p>
   </div>
 </body>
 </html>
